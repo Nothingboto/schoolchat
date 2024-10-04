@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolChat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SchoolChat</h1>
+        <div class="nickname">
+            <input type="text" id="nickname" placeholder="Enter your name">
+            <button onclick="saveNickname()">Save</button>
+        </div>
+        <div class="group">
+            <input type="text" id="group" placeholder="Enter group name">
+            <button onclick="addGroup()">Add Group</button>
+        </div>
+        <div id="groups"></div>
+        <div class="post">
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button onclick="postMessage()">Post</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
